@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores combinados</title>
+    <style>
+        #descendiente p {
+            color: cadetblue;
+        }
+        p {
+            color: chocolate;
+        }
+        #hijo > p {
+            background-color: blanchedalmond;
+        }
+        #adyacente + p {
+            color: aquamarine;
+            background-color:black;
+        }
+        #hermano ~ div {
+            background-color: cadetblue;
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div id="descendiente">
+        <p>texto</p>
+        <p>texto</p>
+        <p>texto</p>
+    </div>
+    <div id="hijo">
+        <p>texto</p>
+        <p>texto</p>
+        <p>texto</p>
+        <div>
+            <p>Nieto</p>
+        </div>
+    </div>
+    <div id="adyacente">
+        <p>texto</p>
+        <p>texto</p>
+        <p>texto</p>
+    </div>
+    <p>Este esta junto</p>
+    <p>Este ya no</p>
+    <div id="hermano"></div>
+    <div>Hermano</div>
+    <div>Hermano</div>
+    <div>Hermano</div>
+</body>
+</html>
