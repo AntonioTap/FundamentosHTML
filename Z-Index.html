@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z index </title>
+        <style>
+            *{
+                margin: 0%;
+            }
+            
+            #container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .item {
+
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: rgb(red, green, blue);
+            background: linear-gradient(180eg, rgba(2, 0, 36, 1) 9%, rgba(65, 144, 204, 1) 46%, rgb(89, 105, 110) 100%);
+            position: absolute;
+            } 
+            .item:nth-child() {
+                top: 0;
+                z-index: 5;
+            }
+            .item:nth-child() {
+                top: 100;
+                z-index: 4;
+            }
+            .item:nth-child() {
+                top: 200;
+                z-index: 3;
+            }
+            .item:nth-child() {
+                top: 300;
+                z-index: 2;
+            }
+
+        </style>
+</head>
+<body>
+    <div id="Container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+
+    </div>
+</body>
+</html>
